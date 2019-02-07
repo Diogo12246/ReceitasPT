@@ -1,0 +1,266 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{546EEE88-F56A-4A52-A6EF-441C64ACF772}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebsiteReceitasPT</RootNamespace>
+    <AssemblyName>WebsiteReceitasPT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BackOffice\ReceitasPT_BO\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="PAGES\PaginaInicial.aspx" />
+    <Content Include="PAGES\PaineldeUser.aspx" />
+    <Content Include="PAGES\Receita.aspx" />
+    <Content Include="PAGES\Receitaporpesquisa.aspx" />
+    <Content Include="PAGES\ReceitasTodas.aspx" />
+    <Content Include="PAGES\TOP5.aspx" />
+    <Content Include="RESOURCES\css\PI.css" />
+    <Content Include="RESOURCES\css\receita.css" />
+    <Content Include="RESOURCES\css\receitastodas.css" />
+    <Content Include="RESOURCES\FONTS\fontbtns.ttf" />
+    <Content Include="RESOURCES\FONTS\glyphicons-halflings-regular.eot" />
+    <Content Include="RESOURCES\FONTS\glyphicons-halflings-regular.ttf" />
+    <Content Include="RESOURCES\FONTS\glyphicons-halflings-regular.woff" />
+    <Content Include="RESOURCES\FONTS\glyphicons-halflings-regular.woff2" />
+    <Content Include="RESOURCES\FONTS\GrandAventure.ttf" />
+    <Content Include="RESOURCES\IMAGES\1600.jpg" />
+    <Content Include="RESOURCES\IMAGES\RATING\1.png" />
+    <Content Include="RESOURCES\IMAGES\RATING\2.png" />
+    <Content Include="RESOURCES\IMAGES\RATING\3.png" />
+    <Content Include="RESOURCES\IMAGES\RATING\4.png" />
+    <Content Include="RESOURCES\IMAGES\RATING\5.png" />
+    <Content Include="RESOURCES\IMAGES\receitastodas.jpg" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.min.map" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="PAGES\Erro.aspx" />
+    <Content Include="PAGES\LOGIN_REGISTAR.aspx" />
+    <Content Include="PAGES\Sobre.aspx" />
+    <Content Include="PAGES\SubmeterReceita.aspx" />
+    <Content Include="RESOURCES\Audio\macerror.mp3" />
+    <Content Include="RESOURCES\css\BS2.css" />
+    <Content Include="RESOURCES\css\Login_Register.css" />
+    <Content Include="RESOURCES\css\Style.css" />
+    <Content Include="RESOURCES\css\Submeter.css" />
+    <Content Include="RESOURCES\FONTS\glyphicons-halflings-regular.svg" />
+    <Content Include="RESOURCES\IMAGES\404.jpg" />
+    <Content Include="RESOURCES\IMAGES\AyyyLmao.jpg" />
+    <Content Include="RESOURCES\IMAGES\loginwallpaper.jpg" />
+    <Content Include="RESOURCES\IMAGES\slider1.jpg" />
+    <Content Include="RESOURCES\IMAGES\slider2.jpg" />
+    <Content Include="RESOURCES\IMAGES\slider3.jpg" />
+    <Content Include="RESOURCES\IMAGES\spices-food-wallpaper.jpg" />
+    <Content Include="RESOURCES\IMAGES\welcome.jpg" />
+    <Content Include="RESOURCES\js\searchbar.js" />
+    <Content Include="RESOURCES\js\submeter.js" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="RESOURCES\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.js" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.min.js" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.slim.js" />
+    <Content Include="RESOURCES\vendor\jquery\jquery.slim.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\Erro.aspx.cs">
+      <DependentUpon>Erro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\LOGIN_REGISTAR.aspx.cs">
+      <DependentUpon>LOGIN_REGISTAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\LOGIN_REGISTAR.aspx.designer.cs">
+      <DependentUpon>LOGIN_REGISTAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\PaginaInicial.aspx.cs">
+      <DependentUpon>PaginaInicial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\PaginaInicial.aspx.designer.cs">
+      <DependentUpon>PaginaInicial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\PaineldeUser.aspx.cs">
+      <DependentUpon>PaineldeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\PaineldeUser.aspx.designer.cs">
+      <DependentUpon>PaineldeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\Receita.aspx.cs">
+      <DependentUpon>Receita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\Receita.aspx.designer.cs">
+      <DependentUpon>Receita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\Receitaporpesquisa.aspx.cs">
+      <DependentUpon>Receitaporpesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\Receitaporpesquisa.aspx.designer.cs">
+      <DependentUpon>Receitaporpesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\ReceitasTodas.aspx.cs">
+      <DependentUpon>ReceitasTodas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\ReceitasTodas.aspx.designer.cs">
+      <DependentUpon>ReceitasTodas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\Sobre.aspx.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\SubmeterReceita.aspx.cs">
+      <DependentUpon>SubmeterReceita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\SubmeterReceita.aspx.designer.cs">
+      <DependentUpon>SubmeterReceita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAGES\TOP5.aspx.cs">
+      <DependentUpon>TOP5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAGES\TOP5.aspx.designer.cs">
+      <DependentUpon>TOP5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="RESOURCES\IMAGES\ReceitasIMG\" />
+    <Folder Include="RESOURCES\VIDEOS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51234</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51234/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

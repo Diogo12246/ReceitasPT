@@ -1,0 +1,266 @@
+﻿@font-face {
+    font-family: WelcomeFontRPT;
+    src: url('../FONTS/GrandAventure.ttf');
+}
+
+@font-face {
+    font-family: WelcomeFontRPTslogan;
+    src: url('../FONTS/fontbtns.ttf');
+}
+body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans',sans-serif;
+    background-image: url('../IMAGES/welcome.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #343a40;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1% 0%;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #D5D5D5
+}
+
+    .navbar-default .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:active {
+        color: #fff
+    }
+
+.navbar-brand-name > {
+    display: inline-block;
+    float: left;
+}
+
+    .navbar-brand-name > img {
+        display: inline-block;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
+}
+
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.logo {
+    text-align: center;
+    font-family: WelcomeFontRPT;
+    font-size: 69px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.srchPT {
+    text-align: center;
+}
+.searchbarPT {
+    position: fixed;
+    top: 59%;
+    left: 49.50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.row2 {
+    position: fixed;
+    top: 59%;
+    left: 49.50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.neon-text {
+    background-color: rgba(255, 0, 0, 0.04);
+    box-shadow: 0 0 70px 20px rgba(255, 0, 0, 0.04);
+    border-radius: 200px;
+    padding: 10px 26px 116px 53px;
+    margin: 20vh auto 0;
+    font-family: WelcomeFontRPTslogan;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffd4a4;
+    line-height: 0.6;
+    filter: drop-shadow(0px 0px 13px #FB5D3A);
+    -webkit-text-stroke: 6px rgba(255, 0, 0, 0.3);
+    display: inline-block;
+    position: relative;
+    animation: glow 170ms ease infinite forwards;
+    position: fixed;
+    top: 39.50%;
+    left: 49.50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+@keyframes glow {
+    0% {
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 15px #FB5D3A);
+    }
+
+    100% {
+    }
+}
+.logo b {
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+        .logo b span {
+            animation: blink linear infinite 2s;
+        }
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #222222;
+}
+
+body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans',sans-serif;
+    background-image: url('../RESOURCES/IMAGES/Welcome.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #343a40;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1% 0%;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #D5D5D5
+}
+
+    .navbar-default .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:active {
+        color: #fff
+    }
+
+.navbar-brand-name > {
+    display: inline-block;
+    float: left;
+}
+
+    .navbar-brand-name > img {
+        display: inline-block;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+#items1step {
+    margin-left: 0px;
+}

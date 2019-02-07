@@ -1,0 +1,7 @@
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\bin\Debug\DAL.dll.config
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\bin\Debug\DAL.dll
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\bin\Debug\DAL.pdb
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\obj\Debug\DAL_old.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\obj\Debug\DAL_old.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\obj\Debug\DAL.dll
+C:\Users\Diogo\OneDrive\repos\ReceitasPT_BO\DAL\obj\Debug\DAL.pdb

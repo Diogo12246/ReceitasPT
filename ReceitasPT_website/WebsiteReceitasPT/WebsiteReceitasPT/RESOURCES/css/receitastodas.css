@@ -1,0 +1,178 @@
+﻿body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans',sans-serif;
+    background-image: url('../IMAGES/receitastodas.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #343a40;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1% 0%;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #D5D5D5
+}
+
+    .navbar-default .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:active {
+        color: #fff
+    }
+
+.navbar-brand-name > {
+    display: inline-block;
+    float: left;
+}
+
+    .navbar-brand-name > img {
+        display: inline-block;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
+}
+
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1% 0%;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #D5D5D5
+}
+
+    .navbar-default .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:active {
+        color: #fff
+    }
+
+.navbar-brand-name > {
+    display: inline-block;
+    float: left;
+}
+
+    .navbar-brand-name > img {
+        display: inline-block;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+#items1step {
+    margin-left: 0px;
+}
